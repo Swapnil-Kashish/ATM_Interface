@@ -25,7 +25,7 @@ public class Transaction {
 
     public String getSummaryLine() {
         if(this.amount>=0){
-            return String.format("%s : Rs%.02f deposited: %s",this.timestamp.toString(),this.amount,this.memo);
+            return String.format("%s : Rs%.02f : %s",this.timestamp.toString(),this.amount,this.memo);
 
         }else{
             return String.format("%s : Rs(%.02f) withdrawn : %s",this.timestamp.toString(),-this.amount,this.memo);
